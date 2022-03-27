@@ -1,0 +1,245 @@
+/* ===Google Fonts=== */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap');
+
+:root{
+    --menu-bg-color: #1E88E5;
+    --white: #FFFFFF;
+    --white-2: rgb(255, 255, 255);
+    --black: #000000;
+    --black-2: #1A1A1A;
+    --orange: #FC3F05;
+    --mainSpacing: 0.1rem;
+    --mainTransition: all 0.3s linear; 
+    --font-semi: 600;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    color: var(--black);
+    background-color: var(--white);
+    font-family: 'Poppins', sans-serif;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+/* --------------Navbar-------------- */
+
+nav{
+    position: sticky;
+    height: 70px;
+    width: 100%;
+    display: flex;
+    top: 0;
+    align-items: center;
+    background: var(--white-2);
+    z-index: 2;
+    box-shadow: 0 1px 4px rgba(62, 117, 173, 0.15);
+}
+.navbar{
+    width: 100%;
+    max-width: 1170px;
+    display: flex;
+    margin: 0 auto;
+    padding: 0 1.5rem;
+    align-items: center;
+    justify-content: space-between;
+}
+
+
+.nav-logo{
+    height: 60px;
+    width: 165px;
+    display: block;
+    position: relative;
+}
+
+.nav-menu{
+    position: relative;
+    right: -120px;
+}
+
+ul{
+    list-style-type: none;
+}
+ul li{
+    display: inline;
+    margin: auto 10px;
+}
+.nav-link{
+    text-decoration: none;
+    color: var(--menu-bg-color);
+    font-weight: var(--font-semi);
+}
+.nav-link:hover{
+    color: #0D47A1;
+}
+
+/* ====Header Section==== */
+
+.banner-pic{
+    min-height: calc(100vh - 100px);
+    background: url(./assets/photos/internbanner.jpg) center / cover no-repeat;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    top: 200px;
+}
+
+.banner{
+    text-align: center;
+    background: rgba(255, 255, 255, .5);
+    display: inline-block;
+    padding: 2rem;
+}
+.banner-title{
+    font-size: 3.4rem;
+    text-transform: none;
+    letter-spacing: var(--mainSpacing);
+    margin-bottom: 3rem;
+}
+.banner-title2{
+    color: #0660af;
+}
+
+.banner-btn{
+    font-size: 1.5rem;
+    padding: .5rem 1rem;
+    letter-spacing: var(--mainSpacing);
+    cursor: pointer;
+    text-transform: none;
+    background: rgba(247, 247, 247, 0.1);
+    transition: var(--mainTransition);
+    border-radius: 0px;
+}
+.banner-btn:hover{
+    color: rgb(0, 127, 201);
+    border-radius: 5px;
+}
+
+.section{
+    padding: 2rem 0;
+}
+.section-title{
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 2.5rem;
+    margin-bottom: 2rem;
+    letter-spacing: var(--mainSpacing);
+}
+
+/* ====Review Slider==== */
+
+.review .review-slider{
+    padding-bottom: 1rem;
+}
+.review .box{
+    padding: 1rem;
+    text-align: center;
+    box-shadow: 0 1rem 2rem rgba(0,0,0,.1);
+    border-radius: .5rem;
+    margin: 2rem auto;
+}
+.review .box2{
+    padding: 1rem;
+    text-align: center;
+    box-shadow: 0 1rem 2rem rgba(0,0,0,.1);
+    border-radius: .5rem;
+    margin: 2rem auto;
+}
+.review .box img{
+    height: 10rem;
+    width: 10rem;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 1rem;
+}
+.review .box2 img{
+    height: 10rem;
+    width: 10rem;
+    border-radius: 0%;
+    object-fit: contain;
+    margin-bottom: 1rem;
+}
+.review .box h3{
+    color: #333;
+    font-size: 1.5rem;
+}
+.review .box p{
+    color: #666;
+    font-size: 1 rem;
+    padding: 1rem 0;
+}
+.review .box .stars i{
+    color: var(--orange);
+    font-size: 1.7rem;
+}
+
+
+.brand-container{
+    text-align: center;
+}
+
+
+/* ==============FOOTER=================== */
+
+.footer{
+    height: 200px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    margin-top: .5rem;
+    color: #027fe6;
+    background-color: #000000;
+    justify-content: center;
+}
+.footer1{
+    align-items: center;
+    justify-items: center;
+    text-align: center;
+    padding: 10px;
+}
+.footer2{
+    align-items: center;
+    justify-items: center;
+    text-align: center;
+    padding: 10px;
+}
+.footer3{
+    align-items: center;
+    justify-items: center;
+    text-align: center;
+    padding: 10px;
+}
+
+.bxs{
+    font-weight: 600;
+    font-size: 2rem;
+    color: #0660af;
+    padding: 1rem;
+}
+.bxs2{
+    font-weight: 600;
+    font-size: 2rem;
+    color: #0660af;
+    padding: .5rem;
+    margin: .5rem;
+    cursor: pointer;
+}
+.bxsm{
+    font-size: 1rem;
+    margin: 5px 0;
+}
+.bxsm2{
+    padding: 1px;
+    margin: 1px;
+    cursor: pointer;
+}
+.bxss{
+    font-size: 1.3rem;
+}
